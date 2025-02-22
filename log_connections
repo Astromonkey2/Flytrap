@@ -1,0 +1,16 @@
+import socket
+
+def honeypot():
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server.bind(("0.0.0.0", 2222))  # Fake SSH port
+    server.listen(5)
+    print("Honeypot running on port 2222...")
+
+    while True:
+        conn, addr = server.accept()
+        print(f"Connection attempt from {addr[0]}")
+        with open("attack_logs.txt", "a") as log:
+            log.write(f"Attempt from {addr[0]}\n")
+        conn.close()
+
+honeypot()
