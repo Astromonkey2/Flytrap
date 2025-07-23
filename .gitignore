@@ -1,22 +1,45 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 
-# Environment variables
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment
 .env
+.venv/
+venv/
+ENV/
 
 # Logs
 *.log
-attack_detection.log
 
-# Data files (add more as needed)
-honeypot-ml/data/GeoLite2-City.mmdb
+# Data
+*.db
+*.sqlite3
+*.h5
+*.csv
+*.tsv
+*.dat
+*.mmdb
+honeypot/data/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/ 
+# VSCode
+.vscode/
+
+# Test/coverage
+.coverage
+htmlcov/
+
+# Misc
+*.bak
+*.swp 
