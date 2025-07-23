@@ -1,0 +1,7 @@
+pymongo
+river
+scikit-learn
+matplotlib
+geoip2
+python-dotenv
+certifi 
