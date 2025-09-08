@@ -1,4 +1,4 @@
-# Honeypot Cyber Security Project
+# Flytrap Cyber Security Project
 
 
 ## Overview
